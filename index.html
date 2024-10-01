@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./CSS/style.css">
 	<title>AdminSite - Movies</title>
 </head>
 
@@ -57,11 +57,14 @@
 
 		<main>
 			<h1>Buscar Película</h1>
-			<input type="text" id="Search" placeholder="Ingresa ID o nombre">
-			<div id="view"></div>
+			<input type="text" id="MovieID" aria-label="Search" placeholder="Ingresa un ID">
+			<button class="Search-BTN" onclick="search_ID()">Buscar Pelicula</button>
+			<div id="view">
+
+			</div>
 		</main>
 	</section>
 </body>
-<script src="./app.js"></script>
-<script src="./main.js" async></script>
+<script src="./JS/app.js"></script>
+<script src="./JS/main.js"></script>
 </html>
