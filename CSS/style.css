@@ -584,13 +584,33 @@ main .btn-send:hover {
     align-items: stretch;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-	border: 2px solid blue;
 }
 
 .container{
-	
+	width: 15rem;
+	height: 26rem;
+	text-align: center;
+	margin-bottom: 2rem;
 }
 
 .container img{
 	width: 10rem;
+}
+
+.Search-BTN{
+	background-color: #0C5FCD;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	width: 4rem;
+}
+
+.Cont-Info{
+	display: flex;
+	justify-content: center;
+}
+
+.Search-BTN:hover{
+	transition: 0.8s;
+	cursor: pointer;
 }

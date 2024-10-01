@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="./CSS/style.css">
+	<link rel="shortcut icon" href="./media/movie.png" type="image/x-icon">
 	<title>AdminSite - Movies</title>
 </head>
 
@@ -13,7 +14,7 @@
 	<section id="sidebar">
 		<a href="#" class="brand"><i class='bx bxs-smile icon'></i> AdminSite</a>
 		<ul class="side-menu">
-			<li><a href="#" class="active"><i class='bx bxs-dashboard icon'></i> Dashboard</a></li>
+			<li><a href="./index.html" class="active"><i class='bx bxs-dashboard icon'></i> Dashboard</a></li>
 			<li class="divider" data-text="main">Main</li>
 			<li>
 				<a href="#"><i class='bx bxs-inbox icon'></i> Gender <i class='bx bx-chevron-right icon-right'></i></a>
@@ -56,9 +57,11 @@
 		</nav>
 
 		<main>
-			<h1>Buscar Película</h1>
-			<input type="text" id="MovieID" aria-label="Search" placeholder="Ingresa un ID">
-			<button class="Search-BTN" onclick="search_ID()">Buscar Pelicula</button>
+			<div class="Cont-Info">
+				<h1>Search Movie</h1>
+				<input type="text" id="MovieID" aria-label="Search" placeholder="Enter id or name">
+				<button class="Search-BTN" onclick="search_ID()">Search</button>
+			</div>
 			<div id="view">
 
 			</div>

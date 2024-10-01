@@ -15,12 +15,12 @@ function view(URL) {
                 Data.description.forEach(element => {
                     document.getElementById("view").innerHTML += `
                 <div class="container">
-                    <p>TITLE:${element["title"]}</p>
-                    <img src="${element["photo_url"]}">
+                    <h3>TITLE:${element["title"]}</h3>
                     <p>YEAR:${element["year"]}</p>
-                    <p>TYPE:${element["type"]}</p>
-                    <p>URL:${element["url"]}</p>
+                    <img src="${element["photo_url"]}">
                     <p>ID:${element["id"]}</p>
+                    <p>TYPE:${element["type"]}</p>
+                    <a href="${element["url"]}">URL</a>
                 </div>
                 `;
                 });
