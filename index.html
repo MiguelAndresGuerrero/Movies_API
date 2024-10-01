@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+	<title>AdminSite - Movies</title>
+</head>
+
+<body>
+	<section id="sidebar">
+		<a href="#" class="brand"><i class='bx bxs-smile icon'></i> AdminSite</a>
+		<ul class="side-menu">
+			<li><a href="#" class="active"><i class='bx bxs-dashboard icon'></i> Dashboard</a></li>
+			<li class="divider" data-text="main">Main</li>
+			<li>
+				<a href="#"><i class='bx bxs-inbox icon'></i> Gender <i class='bx bx-chevron-right icon-right'></i></a>
+				<ul class="side-dropdown">
+					<li><a href="./index2.html">Terror</a></li>
+					<li><a href="./index3.html">Heroe</a></li>
+					<li><a href="./index4.html">Show</a></li>
+					<li><a href="./index5.html">Movie</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class='bx bxs-chart icon'></i> Charts</a></li>
+			<li><a href="#"><i class='bx bxs-widget icon'></i> Widgets</a></li>
+			<li class="divider" data-text="table and forms">Table and forms</li>
+			<li><a href="#"><i class='bx bx-table icon'></i> Tables</a></li>
+			<li>
+				<a href="#"><i class='bx bxs-notepad icon'></i> Forms <i class='bx bx-chevron-right icon-right'></i></a>
+				<ul class="side-dropdown">
+					<li><a href="#">Basic</a></li>
+					<li><a href="#">Select</a></li>
+					<li><a href="#">Checkbox</a></li>
+					<li><a href="#">Radio</a></li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<section id="content">
+		<nav>
+			<i class='bx bx-menu toggle-sidebar'></i>
+			<form action="#">
+
+			</form>
+
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+					alt="">
+				<ul class="profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle icon'></i> Profile</a></li>
+					<li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+					<li><a href="#"><i class='bx bxs-log-out-circle'></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<main>
+			<h1 class="text-center">Movie</h1>
+			<div class="mb-3">
+				<label for="enterId" class="form-label">Ingresa un ID: </label>
+				<input class="form-control" type="number" id="enterId" placeholder="1">
+				<button onclick="search_Id()" id="btn-primary">Search Movie</button>
+			</div>
+			<h1 class="title">Content Data</h1>
+			<div id="view">
+
+			</div>
+		</main>
+	</section>
+</body>
+<script src="./app.js"></script>
+<script src="main.js" async></script>
+</html>
