@@ -29,5 +29,5 @@ function view(URL) {
         .catch(error => {
             console.error('Error, request API not found: ', error);
             document.getElementById("view").innerHTML = `<p>Error, loading movie</p>`;
-        });
+        })
 }

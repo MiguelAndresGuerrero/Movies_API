@@ -613,4 +613,5 @@ main .btn-send:hover {
 .Search-BTN:hover{
 	transition: 0.8s;
 	cursor: pointer;
+	background-color: darkblue;
 }
