@@ -15,7 +15,7 @@ function view(URL) {
                 Data.description.forEach(element => {
                     document.getElementById("view").innerHTML += `
                 <div class="container">
-                    <h3>TITLE:${element["title"]}</h3>
+                    <h3>${element["title"]}</h3>
                     <p>YEAR:${element["year"]}</p>
                     <img src="${element["photo_url"]}">
                     <p>ID:${element["id"]}</p>
