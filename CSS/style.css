@@ -720,7 +720,7 @@ main .btn-send:hover {
 
 @keyframes inputRGB{
 	0% {
-		border: 2px solid red;
+		background-image: linear-gradient(2px solid red);
 	}
 	25%{
 		border: 2px solid yellow;
@@ -735,12 +735,16 @@ main .btn-send:hover {
 		border: 2px solid purple;
 	}
 }
+p{
+	color: white;
+}
 
 h1 {
-	color: #000;
+	color: #000000;
 	animation: 2s infinite;
 	animation-name: H1RGB;
 }
+
 
 @keyframes H1RGB{
 	0%{
@@ -782,4 +786,18 @@ h1 {
 	100%{
 		border: 2px solid purple;
 	}
+}
+
+.container a{
+	width: 6rem;
+	overflow: auto;
+}
+
+main{
+	background-color: #000000da;
+	border-radius: 20px;
+}
+
+h3{
+	color: white;
 }

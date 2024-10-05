@@ -16,11 +16,11 @@ function view(URL) {
                     document.getElementById("view").innerHTML += `
                 <div class="container">
                     <h3>${element["title"]}</h3>
-                    <p>YEAR:${element["year"]}</p>
                     <img src="${element["photo_url"]}">
-                    <p>ID:${element["id"]}</p>
-                    <p>TYPE:${element["type"]}</p>
-                    <a href="${element["url"]}">URL</a>
+                    <p>Year: ${element["year"]}</p>
+                    <p>ID: ${element["id"]}</p>
+                    <p>Type: ${element["type"]}</p>
+                    <a href="${element["url"]}">${element["title"]}</a>
                 </div>
                 `;
                 });
@@ -30,4 +30,4 @@ function view(URL) {
             console.error('Error, request API not found: ', error);
             document.getElementById("view").innerHTML = `<p>Error, loading movie</p>`;
         })
-}
+};
